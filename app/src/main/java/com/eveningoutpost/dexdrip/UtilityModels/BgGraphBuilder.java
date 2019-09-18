@@ -977,18 +977,6 @@ public class BgGraphBuilder {
             lines[5].setHasPoints(true);
             lines[5].setHasLabels(false);
 
-  /*
-            lines[6] = new Line(cobValues);
-            lines[6].setColor(getCol(X.color_predictive_dark));
-            lines[6].setHasLines(false);
-            lines[6].setCubic(false);
-            lines[6].setFilled(false);
-            lines[6].setPointRadius(1);
-            lines[6].setHasPoints(true);
-            lines[6].setHasLabels(false);
-
-*/
-
             lines[6] = new Line(cobValues);
             lines[6].setColor(getCol(X.color_predictive_dark));
             lines[6].setHasLines(true);
