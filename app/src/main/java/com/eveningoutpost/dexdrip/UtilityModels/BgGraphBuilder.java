@@ -977,6 +977,7 @@ public class BgGraphBuilder {
             lines[5].setHasPoints(true);
             lines[5].setHasLabels(false);
 
+  /*
             lines[6] = new Line(cobValues);
             lines[6].setColor(getCol(X.color_predictive_dark));
             lines[6].setHasLines(false);
@@ -985,6 +986,18 @@ public class BgGraphBuilder {
             lines[6].setPointRadius(1);
             lines[6].setHasPoints(true);
             lines[6].setHasLabels(false);
+
+*/
+
+            lines[6] = new Line(cobValues);
+            lines[6].setColor(getCol(X.color_predictive_dark));
+            lines[6].setHasLines(true);
+            lines[6].setCubic(false);
+            lines[6].setFilled(true);
+            lines[6].setAreaTransparency(35);
+            lines[6].setFilled(true);
+            lines[6].setPointRadius(1);
+            lines[6].setHasPoints(true);
 
             lines[7] = new Line(polyBgValues);
             lines[7].setColor(ChartUtils.COLOR_RED);
@@ -1646,8 +1659,9 @@ public class BgGraphBuilder {
                                     activityValues.add(av);
                                 }
 
-                                if (iob.cob > 0) {
-                                    double height = iob.cob * cobscale;
+                                if (iob.cob >= 0) {
+                                    //double height = iob.cob * cobscale;
+                                    double height = iob.cob * iobscale;
                                     if (height > cob_insulin_max_draw_value)
                                         height = cob_insulin_max_draw_value;
                                     PointValue pv = new PointValue((float) fuzzed_timestamp, (float) height);
