@@ -1648,8 +1648,7 @@ public class BgGraphBuilder {
                                 }
 
                                 if (iob.cob >= 0) {
-                                    //double height = iob.cob * cobscale;
-                                    double height = iob.cob * iobscale;
+                                    double height = iob.cob * cobscale;
                                     if (height > cob_insulin_max_draw_value)
                                         height = cob_insulin_max_draw_value;
                                     PointValue pv = new PointValue((float) fuzzed_timestamp, (float) height);
