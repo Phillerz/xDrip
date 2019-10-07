@@ -465,6 +465,7 @@
     <string name="treatment_color_dark">Behandlung Farbe (dunkel):</string>
     <string name="predictive_color">Farbe für Vorhersage</string>
     <string name="predictive_color_dark">Vorhersage Farbe (dunkel):</string>
+    <string name="cob_color">COB Farbe</string>
     <string name="average_and_target_lines">Durchschnitts- und Ziellinien</string>
     <string name="eight_hour_average_line">8-Stunden-Durchschnitt als Linie</string>
     <string name="twenty_four_hour_average_line">24-Stunden-Durchschnitt als Linie</string>

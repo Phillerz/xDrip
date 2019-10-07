@@ -672,6 +672,7 @@ public class BgGraphBuilder {
             lines.add(treatments[3]); // activity
             lines.add(treatments[5]); // predictive
             lines.add(treatments[6]); // cob
+            lines.add(treatments[9]); // cob
             lines.add(treatments[7]); // poly predict
 
 
@@ -912,7 +913,7 @@ public class BgGraphBuilder {
     }
 
     public Line[] treatmentValuesLine() {
-        Line[] lines = new Line[9];
+        Line[] lines = new Line[10];
         try {
 
             lines[0] = new Line(treatmentValues);
@@ -979,13 +980,12 @@ public class BgGraphBuilder {
 
             lines[6] = new Line(cobValues);
             lines[6].setColor(getCol(X.color_predictive_dark));
-            lines[6].setHasLines(true);
+            lines[6].setHasLines(false);
             lines[6].setCubic(false);
-            lines[6].setFilled(true);
-            lines[6].setAreaTransparency(35);
-            lines[6].setFilled(true);
+            lines[6].setFilled(false);
             lines[6].setPointRadius(1);
             lines[6].setHasPoints(true);
+            lines[6].setHasLabels(false);
 
             lines[7] = new Line(polyBgValues);
             lines[7].setColor(ChartUtils.COLOR_RED);
@@ -1006,6 +1006,17 @@ public class BgGraphBuilder {
             lines[8].setPointRadius(1);
             lines[8].setHasPoints(true);
             lines[8].setHasLabels(false);
+
+            // COB
+            lines[9] = new Line(cobValues);
+            lines[9].setColor(getCol(X.color_cob));
+            lines[9].setHasLines(true);
+            lines[9].setCubic(false);
+            lines[9].setFilled(true);
+            lines[9].setAreaTransparency(35);
+            lines[9].setFilled(true);
+            lines[9].setPointRadius(1);
+            lines[9].setHasPoints(true);
 
 
         } catch (Exception e) {

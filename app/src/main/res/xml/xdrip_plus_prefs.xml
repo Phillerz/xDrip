@@ -93,6 +93,13 @@
                         app:colorpicker_noneSelectedSummaryText="@string/default_color_selected"
                         app:colorpicker_selectNoneButtonText="@string/revert_to_default"
                         app:colorpicker_showHex="false" />
+                    <com.eveningoutpost.dexdrip.UtilityModels.ColorPicker
+                        android:defaultValue="#FF6103"
+                        android:key="color_cob"
+                        android:title="@string/cob_color"
+                        app:colorpicker_noneSelectedSummaryText="@string/default_color_selected"
+                        app:colorpicker_selectNoneButtonText="@string/revert_to_default"
+                        app:colorpicker_showHex="false" />
 
 
                 </PreferenceCategory>

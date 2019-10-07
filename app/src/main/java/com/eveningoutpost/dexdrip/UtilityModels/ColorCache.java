@@ -49,6 +49,7 @@ public class ColorCache {
         color_treatment_dark("color_treatment_dark"),
         color_predictive("color_predictive"),
         color_predictive_dark("color_predictive_dark"),
+        color_cob("color_cob"),
         color_average1_line("color_average1_line"),
         color_average2_line("color_average2_line"),
         color_target_line("color_target_line"),

@@ -487,6 +487,7 @@
     <string name="treatment_color_dark">Treatment Color Dark</string>
     <string name="predictive_color">Predictive Color</string>
     <string name="predictive_color_dark">Predictive Color Dark</string>
+    <string name="cob_color">COB Color</string>
     <string name="average_and_target_lines">Average and Target Lines</string>
     <string name="eight_hour_average_line">8 Hour Average Line</string>
     <string name="twenty_four_hour_average_line">24 Hour Average Line</string>
